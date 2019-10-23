@@ -7,3 +7,43 @@
 //     -calculate the number of male friends that your class have by writing a function called nbOfMale.
 //     -Write a function searchMates that, given a query and an array of Mates,
 //           searches the array of mates for "matching" mate. You will decide what way you want to write your search algorithm.
+
+
+
+function createOne( name, gender ,nationality, age, phone, email ){
+	return {name:name,
+		    gender:gender,
+			nationality:nationality,
+			age,age,
+			phone:phone,
+			email:email
+			}
+	}
+var arrayClass=[];
+
+function displayFriend(mate){
+	return "Name:"+mate.name+"---"+"Gender:"+mate.gender+"---"+"Age:"+mate.age+"---"+"Phone:"+mate.Phone+"---"+"Email:"+mate.email;
+}
+
+function addFriend(mate){
+	arrayClass.push(mate);
+}
+
+
+function nbOfMale(){
+	var j=0;
+	for(let i in array){
+		if(array[i].gender===="male"){
+			j++;
+		}
+	}
+	return j;
+}
+
+function searchMates(query, array){
+
+	return array.map((val)=>{
+		if(val.name===query)
+			return val;
+	});
+}
