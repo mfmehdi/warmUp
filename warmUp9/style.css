@@ -1,0 +1,25 @@
+body{
+	background-color: #92c3f0;
+}
+header{
+	font-size:50px;
+	position: relative;
+	left: 622px
+
+}
+
+img{
+	width: 30%;
+	height: 200px
+}
+
+#bt1{
+	 font-family: cursive; 
+}
+#bt2{
+	 font-family: system-ui; 
+}
+li{
+	font-size: 30px;
+	color: white;
+}
