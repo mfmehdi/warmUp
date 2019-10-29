@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>warmUp10</title>
+	<link rel="stylesheet" type="text/css" href="stylew9.css">
+</head>
+<body>
+	<input type="text" id="text">
+	<button>ok</button>
+	<ul>
+	</ul>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous">
+	  	
+	 </script>
+	 <script> //function(){ $('p#output').text( $('input#color').val() ).css('color', 'red'); }
+	 				$('button').on('click',createsList );
+	 				var color="class2";
+	 					function createsList () {
+	 						if(color==="class2")
+	 							{color="class1"}
+	 						else 
+	 							{color="class2"}
+	 				
+			             $("ul").append("<li class="+color+">"+$("#text").val()+"</li>")
+				}
+	 </script>
+</body>
+</html>
