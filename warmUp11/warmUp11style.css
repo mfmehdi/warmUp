@@ -1,0 +1,15 @@
+#list{
+	background-color: #e6dfdf;
+	 display: flex;
+     flex-wrap: wrap;
+}
+#l-left{
+	color: red;
+  
+}
+#l-right{
+	color: blue;
+  
+}
+
+
