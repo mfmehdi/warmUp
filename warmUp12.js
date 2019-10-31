@@ -9,7 +9,7 @@ Output
     Your function should return the starting (minimum) and ending (maximum) numbers of the range in the form of an array/list comprised of two integers.
     Test Example
 
-    let inputString = '15681412911101372';
+    let inputString = '156814121110137';
 
     mysteryRange(inputString,10) // [6,15]
         -The 10 numbers in this string are:
@@ -36,7 +36,7 @@ if(array.length<num)
    			 console.log("str.substr(i,1)----i="+i+"==> "+str.substr(i,1))
    		}
      else{
-   		if(str.substr(i,2) <= end)
+   		if(str.substr(i,2) <= end &&  str.substr(i,2) >= start)
        {array.push(str.substr(i,2))
        	i=i+1
        	 console.log("str.substr(i,2)----i="+i+"==> "+str.substr(i,2))
