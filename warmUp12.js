@@ -25,8 +25,8 @@ Technical Details
 
  function mysteryRange(str,num){
 
- 	var start=str.length-1-num;
- 	var end=str.length-2;
+ 	var start=str.length-num;
+ 	var end=str.length-1;
 console.log(start) ;console.log(end)
     var array=[];
     for (var i = 0; i <str.length; i++) {
