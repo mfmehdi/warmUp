@@ -33,17 +33,17 @@ console.log(start) ;console.log(end)
 if(array.length<num)
     	{if(str.substr(i,1)>=start){
    			array.push(str.substr(i,1))
-   			 console.log("str.substr(i,1)----i="+i+"==> "+str.substr(i,1))
+   			// console.log("str.substr(i,1)----i="+i+"==> "+str.substr(i,1))
    		}
      else{
    		if(str.substr(i,2) <= end &&  str.substr(i,2) >= start)
        {array.push(str.substr(i,2))
        	i=i+1
-       	 console.log("str.substr(i,2)----i="+i+"==> "+str.substr(i,2))
+       	// console.log("str.substr(i,2)----i="+i+"==> "+str.substr(i,2))
        }
    }
     }}
-    console.log(array)
+   // console.log(array)
 
     return [Math.min(...array),Math.max(...array)]
  }
