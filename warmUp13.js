@@ -48,7 +48,7 @@ function solution(str){
             for(let i in str){
             	value=numbers[str[i]]+value;
             }
-     return Value;
+     return value;
 }
 //********************2
 function toCamelCase(str){
@@ -57,7 +57,7 @@ var i=0;
 var regex = RegExp(\[A-Z]\);
 while(i<str.length){
    var index =str.indexOf('_')+1
-  str.replace(str[index],index)
+  str.replace(str[index],str[index].toUpperCase())
 }
 }
 
