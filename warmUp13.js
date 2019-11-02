@@ -19,7 +19,8 @@
             D          500
             M          1,000 
     
-    2. Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original
+    2. Complete the method/function so that it converts dash/underscore delimited words into camel casing.
+     The first word within the output should be capitalized only if the original
      word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
         Examples:
 
@@ -36,18 +37,30 @@
 */
 
 function solution(str){
-	value=0;
-	numbers={I : 1,
-             V:     5,
-             X:     10,
-             L :    50,
-             C :    100,
-            D :    500,
-              M :   1000 }
+	var value=0;
+	var l;
+	var num=1;
+	numbers={   I:1,
+              V:5,
+              X:10,
+              L:50,
+              C:100,
+              D:500,
+              M 1000 }
 
-            for(let i in str){
-            	value=numbers[str[i]]+value;
-            }
+            l=numbers[str[0]]
+            value=numbers[str[0]]
+            for(var i=1;i<str.length;i++){
+            	if(numbers[str[i]]>=l)
+            	{  
+            		value=value+numbers[str[i]];
+            	}
+              else{
+                value=value-numbers[str[i]];
+              }
+
+                l=numbers[str[i]];
+              }
      return value;
 }
 //********************2
